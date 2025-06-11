@@ -1,6 +1,6 @@
 // levenshtein.c - Levenshtein distance
 // MIT licensed.
-// Adaptado por [Seu Nome] com base em código de Titus Wormer <tituswormer@gmail.com>
+// Base em código de Titus Wormer <tituswormer@gmail.com>
 // Fonte: https://en.wikipedia.org/wiki/Levenshtein_distance
 
 #include <string.h>

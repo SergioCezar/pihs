@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -I. -Ipocketpy
+CFLAGS = -Wall -I. -Ipocketpy -Wno-char-subscripts
 
 SRC = main.c levenshtein.c pocketpy/pocketpy.c hamming.c
 
@@ -16,5 +16,3 @@ run: $(BIN)
 
 clean:
 	rm -f $(BIN)
-
-CFLAGS = -Wall -I. -Ipocketpy -Wno-char-subscripts

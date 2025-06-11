@@ -1,8 +1,8 @@
-// hamming.c
 #include "hamming.h"
 #include <string.h>
 
 size_t hamming(const char *a, const char *b) {
+    
     size_t len_a = strlen(a);
     size_t len_b = strlen(b);
 

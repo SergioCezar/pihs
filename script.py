@@ -1,14 +1,28 @@
 print('======Distancia de Levenshtein:======')
-strings = ['Pao Batata', 'Faculdade Escola', 'Ayrton Senna', 'Pele Maradona']
+strings = [
+    'casa casca',      
+    'gato rato',         
+    'kit kat',           
+    'intenção atenção',
+    'monitor computador',
+    'python java',
+    'programação informática'   
+]
 for i in range(len(strings)):
     stringa, stringb = strings[i].split(' ')
-    distancia = levenshtein_em_python(stringa, stringb)
+    distancia = dist_levenshtein(stringa, stringb)
     print('A distancia entre ' + stringa + ' e ' + stringb + ' é: ' + str(distancia))
 
 print('======Distancia de Hamming:======')
 
-strings = ['banana macaco', 'lata vara', 'xica xico', 'leandros leonardo']
+strings = [
+    'aaaaa aaaab',    
+    '12345 54321',    
+    'abcde abfde',   
+    'karla karlo',
+    'a bb'     
+]
 for i in range(len(strings)):
     stringa, stringb = strings[i].split(' ')
-    distancia = hamming_em_python(stringa, stringb)
+    distancia = dist_hamming(stringa, stringb)
     print('A distancia entre ' + stringa + ' e ' + stringb + ' é: ' + str(distancia))
