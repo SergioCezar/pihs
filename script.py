@@ -8,6 +8,7 @@ strings = [
     'python java',
     'programação informática'   
 ]
+
 for i in range(len(strings)):
     stringa, stringb = strings[i].split(' ')
     distancia = dist_levenshtein(stringa, stringb)
@@ -20,7 +21,8 @@ strings = [
     '12345 54321',    
     'abcde abfde',   
     'karla karlo',
-    'a bb'     
+    'a bb',
+    'mateus sergio' 
 ]
 for i in range(len(strings)):
     stringa, stringb = strings[i].split(' ')
